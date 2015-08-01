@@ -1,0 +1,22 @@
+.heading {
+  background: #90EE90;
+}
+.fieldset {
+  width: 14%;
+  display: inline-block;
+  background: #778899;
+  line-height: 150%;
+
+}
+.field {
+  width: 80%;
+  display: block;
+  float: right;
+  background: #FEFAC0;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin-right: 5px
+}
