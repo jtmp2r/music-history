@@ -8,7 +8,8 @@ songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little
 
 songs.unshift("Kick, Push - by Lupe Fiasco")
 songs.push("Homecoming - by Kanye West")
-var songsEl = document.getElementById(songsOutPut)
+var songEL = document.getElementById("songsOutPut");
+console.log(songEL);
 
 
 
@@ -19,6 +20,6 @@ for (var i = 0; i < songs.length; i++) {
   fixSongs = fixSongs.replace("(", "");
   fixSongs = fixSongs.replace("!", "");
   fixSongs = fixSongs.replace(/>/g, "-");
-  songsEl.innerHTML += songs[i]; "<br>"
+  songEl.innerHTML += songs[i]; "<br>";
 } 
 
