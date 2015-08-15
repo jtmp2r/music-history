@@ -2,14 +2,17 @@
   <html>
     <head>
       <link rel="stylesheet" type="text/css" href="music-history.css">
-      <script src="music.js"></script>
     </head>
-    <fieldset class="heading">
-      <a href="view music">View Music</a> |
-      <a href="add music">Add Music</a> |
-      <a href="profile">Profile</a>
-    </fieldset>
-    <fieldset class="fieldset">
+    <body>
+    <header>
+      <fieldset class="heading">
+        <a href="view music">View Music</a> |
+        <a href="add music">Add Music</a> |
+        <a href="profile">Profile</a>
+      </fieldset>
+    </header>
+      <div class="flex-container">
+    <fieldset class="fieldset flex">
       <label>Song Length</label>
       <br/>
       <input type="range" min="1" max="10" step="1" value="1"/>
@@ -42,8 +45,12 @@
       <input type="checkbox" name="r&b" value="r&b">Rhythm & Blues
       <input type="checkbox" name="jazz" value="jazz">Jazz
     </fieldset>
-    <fieldset class="field">
-     <div id="songsOutPut"></div>
+    <fieldset class="field flex">
+     <div id="abcd"></div>
+
     </fieldset>
-  
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="music1.js"></script>
+      </div>
+    </body>
   </html>

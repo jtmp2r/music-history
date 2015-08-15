@@ -1,22 +1,29 @@
 .heading {
   background: #90EE90;
+  position: fixed;
 }
 .fieldset {
   width: 14%;
   display: inline-block;
-  background: #778899;
+  background: #FFF5EE;
   line-height: 150%;
-
+  flex-grow: 1;
+  margin-top: 50px;
 }
 .field {
   width: 80%;
   display: block;
   float: right;
-  background: #FEFAC0;
+  background: #F5FFFA;
+  line-height: 150%;
+  flex-grow: 4;
+  margin-top: 50px;
 }
 
-.center {
-  display: block;
-  text-align: center;
-  margin-right: 5px
+
+
+.flex-container {
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
 }

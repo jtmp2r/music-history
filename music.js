@@ -1,3 +1,6 @@
+var songEl = document.getElementById("abcd");
+console.log(document.getElementById("abcd"))
+console.log(songEl);
 var songs = [];
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -8,18 +11,13 @@ songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little
 
 songs.unshift("Kick, Push - by Lupe Fiasco")
 songs.push("Homecoming - by Kanye West")
-var songEL = document.getElementById("songsOutPut");
-console.log(songEL);
-
-
 
 for (var i = 0; i < songs.length; i++) {
-  var fixSongs = songs[i];
-  fixSongs = fixSongs.replace("*", "");
-  fixSongs = fixSongs.replace("@", "");
-  fixSongs = fixSongs.replace("(", "");
-  fixSongs = fixSongs.replace("!", "");
-  fixSongs = fixSongs.replace(/>/g, "-");
-  songEl.innerHTML += songs[i]; "<br>";
+  songs[i] = songs[i].replace("*", "");
+  songs[i] = songs[i].replace("@", "");
+  songs[i] = songs[i].replace("(", "");
+  songs[i] = songs[i].replace("!", "");
+  songs[i] = songs[i].replace(/>/g, "-");
+  songEl.innerHTML += "<div>" +  songs[i] + "</div>";
 } 
 
